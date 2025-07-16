@@ -3,14 +3,14 @@ body {
   margin: 0;
   padding: 0;
   background: #303030;
-  color: #6b6b6b;
+  color: #e0e0e0;
   line-height: 1.6;
 }
 
 header.splash {
   text-align: center;
   padding: 2rem 1rem;
-  background: #4b4b4b;
+  background: #303030;
 }
 
 .reel-container iframe {
@@ -32,12 +32,27 @@ header.splash {
   border-radius: 6px;
   display: block;
   margin-bottom: 0.5rem;
+  background: #222; /* in case of transparent images */
 }
 
 footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  background: #4b4b4b;
+  background: #303030;
 }
+
+section, .project, .embed {
+  background: transparent;
+  color: inherit;
+}
+
+a {
+  color: #80c0ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 
